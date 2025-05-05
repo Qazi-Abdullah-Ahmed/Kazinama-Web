@@ -9,7 +9,7 @@ function Press() {
             title: 'The nostalgia in Ahista made it resonate, says Kazinama',
             publication: 'Deccan Chronicle',
             date: '17 Feburary 2025',
-            image: '/photos/MainPhoto.JPG',
+            image: '/photos/kazinamamain.png',
             excerpt: 'In an exclusive interview to Deccan Chronicle, Kazinama traces his musical journey from his Youtube days to his latest chartbuster, and explains why music lovers connected with ‘Ahista Ahista’',
             link: 'https://www.deccanchronicle.com/entertainment/music/kazinama-on-ahista-ahista-becoming-a-insta-viral-sensation-1861749'
         },

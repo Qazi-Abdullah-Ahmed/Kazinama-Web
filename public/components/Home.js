@@ -80,7 +80,7 @@ For updates, live shows, and new releases, stay tuned—and dive into his world 
                     </div>
                     <div data-name="home-image" className="rounded-lg overflow-hidden shadow-xl relative group">
                         <img 
-                            src="/photos/MainPhoto.jpg" 
+                            src="/photos/kazinamamain.png" 
                             alt="Kazinama profile" 
                             className="w-full h-auto transform group-hover:scale-105 transition-transform duration-700"
                         />
