@@ -41,7 +41,7 @@ function Music() {
         <section id="music" data-name="music-section" className="min-h-screen flex items-center bg-[#0a0a0a] py-20">
             <div className="container mx-auto px-4">
                 <h2 className="text-4xl font-bold mb-12 text-center">
-                    <span className="text-[#FFD700]">My</span> Music
+                    <span className="text-[#FFD700]">MUSIC</span>
                 </h2>
                 <div className="max-w-3xl mx-auto">
                     {playlist.map((song, index) => (

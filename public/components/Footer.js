@@ -14,7 +14,7 @@ function Footer() {
 
                     {/* Kazinama Text Logo */}
                     <div className="flex items-center justify-center">
-                        <h1 className="text-2xl font-bold text-[#FFD700]">Kazinama</h1>
+                        <h1 className="text-2xl font-bold text-[#FFD700]">KAZINAMA</h1>
                     </div>
 
                     {/* Social + Patreon */}
@@ -41,7 +41,7 @@ function Footer() {
                 </div>
 
                 <div className="mt-10 pt-6 border-t border-gray-700 text-center text-sm text-gray-400">
-                    <p>&copy; 2025 <span className="text-white">Kazinama</span>. All rights reserved.</p>
+                    <p>&copy; 2025 <span className="text-white">KAZINAMA</span>. All rights reserved.</p>
                 </div>
             </div>
         </footer>

@@ -10,7 +10,7 @@ function More() {
         <section id="more" data-name="more-section" className="section bg-[#121212] py-20">
             <div className="container mx-auto px-4">
                 <h2 className="text-3xl font-bold mb-12 text-center">
-                    <span className="text-[#FFD700]">Connect</span> With Me
+                    <span className="text-[#FFD700]">Connect</span>
                 </h2>
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                     {socialLinks.map(link => (

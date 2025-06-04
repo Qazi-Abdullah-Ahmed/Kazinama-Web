@@ -19,7 +19,7 @@ For updates, live shows, and new releases, stay tuned—and dive into his world 
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     <div data-name="home-content" className="text-center md:text-left">
                         <h1 className="text-5xl font-bold mb-6">
-                            <span className="text-[#FFD700]">Kazinama</span>
+                            <span className="text-[#FFD700]">KAZINAMA</span>
                         </h1>
                         
                         <div className="relative">
@@ -58,7 +58,7 @@ For updates, live shows, and new releases, stay tuned—and dive into his world 
                                 href="#more" 
                                 className="border-2 border-[#FFD700] text-[#FFD700] px-6 py-2 rounded-full hover:bg-[#FFD700] hover:text-black transition-colors duration-300"
                             >
-                                Connect With Me
+                                Connect
                             </a>
                         </div>
 

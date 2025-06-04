@@ -24,8 +24,8 @@ function MusicVideos() {
         },
         {
             id: 'I3Xujf73o2A',
-            title: 'Kazinama - Latest Performance',
-            description: '',
+            title: 'Ghulam Ali - Awaargi | Kazinama | ft - John Wick',
+            description: 'Ghulam Ali sees the life of John wick through my scope.',
             thumbnail: `https://img.youtube.com/vi/I3Xujf73o2A/maxresdefault.jpg`
         }
     ];
@@ -62,7 +62,7 @@ function MusicVideos() {
         <section id="personal-videos" data-name="videos-section" className="min-h-screen bg-[#0a0a0a] py-20">
             <div className="container mx-auto px-4">
                 <h2 className="text-4xl font-bold mb-12 text-center">
-                    <span className="text-[#FFD700]">My</span> Videos
+                    <span className="text-[#FFD700]">VIDEOS</span>
                 </h2>
 
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">

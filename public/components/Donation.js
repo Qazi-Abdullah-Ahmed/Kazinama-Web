@@ -9,8 +9,38 @@ function Donation() {
     };
 
     const handleRazorpayDonation = () => {
-        window.open('https://razorpay.me/@kazinama', '_blank');
+        if (!amount) {
+            setError("Please enter a valid amount");
+            return;
+        }
+
+        const options = {
+            key: "rzp_live_Hxuc0ypwyR55G6",
+            amount: parseInt(amount) * 100, 
+            currency: "INR",
+            name: "Kazinama",
+            description: "Support Donation",
+            image: "/photos/razorpay.png",
+            handler: function (response) {
+                alert("Payment successful!\nPayment ID: " + response.razorpay_payment_id);
+            },
+            prefill: {
+                name: "",
+                email: "", 
+                contact: "" 
+            },
+            notes: {
+                message: message
+            },
+            theme: {
+                color: "#FFD700"
+            }
+        };
+
+        const rzp = new window.Razorpay(options);
+        rzp.open();
     };
+
 
     const handleAmountChange = (e) => {
         const value = e.target.value;
@@ -23,7 +53,7 @@ function Donation() {
         <section id="donation" data-name="donation-section" className="min-h-screen bg-[#121212] flex items-center py-20">
             <div className="container max-w-4xl mx-auto px-4">
                 <h2 className="text-4xl font-bold mb-8 text-center">
-                    <span className="text-[#FFD700]">Support</span> My Journey
+                    <span className="text-[#FFD700]">SUPPORT</span>
                 </h2>
                 
                 <div className="bg-[#1A1A1A] rounded-lg p-8 shadow-xl">
