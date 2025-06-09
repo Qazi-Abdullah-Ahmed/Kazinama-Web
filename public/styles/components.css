@@ -1,11 +1,12 @@
 @font-face {
   font-family: 'Delirium';
-  src: url('/fonts/DeliriumNcv.woff2') format('woff2'),
-       url('/fonts/DeliriumNcv.woff') format('woff'),
+  src: url('/fonts/cfk2.woff2') format('woff2'),
+       url('/fonts/cfk.woff') format('woff'),
        url('/fonts/DeliriumNcv.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
+
 /* Video aspect ratio container */
 .aspect-w-16 {
     position: relative;
