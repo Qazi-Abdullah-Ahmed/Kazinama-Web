@@ -8,7 +8,7 @@ function Merch() {
                         Soon
                     </div>
                 </div>
-                <h2 className="text-4xl font-bold mb-4">
+                <h2 className="text-[3rem] mb-4">
                     Merch Store <span className="text-[#FFD700]">Coming Soon</span>
                 </h2>
                 <p className="text-gray-400 text-xl max-w-md mx-auto">

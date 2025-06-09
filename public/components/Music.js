@@ -40,7 +40,7 @@ function Music() {
     return (
         <section id="music" data-name="music-section" className="min-h-screen flex items-center bg-[#0a0a0a] py-20">
             <div className="container mx-auto px-4">
-                <h2 className="text-4xl font-bold mb-12 text-center">
+                <h2 className="text-[4rem] mb-12 text-center">
                     <span className="text-[#FFD700]">MUSIC</span>
                 </h2>
                 <div className="max-w-3xl mx-auto">
@@ -57,7 +57,7 @@ function Music() {
                                         <i className="fas fa-music text-[#FFD700]"></i>
                                     </div>
                                     <div>
-                                        <h3 className="text-white font-medium">{song.title}</h3>
+                                        <h4 className="text-white font-medium">{song.title}</h4>
                                         <p className="text-gray-400 text-sm">{song.artist}</p>
                                     </div>
                                 </div>

@@ -6,15 +6,14 @@ function Navbar() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-20">
                     <div className="hidden md:flex items-center justify-center flex-1">
-                        <div className="flex items-center justify-center space-x-12">
-                            <a href="/" data-name="home-link" className="text-white hover:text-[#FFD700] transition-colors duration-300 text-lg uppercase tracking-wide">HOME</a>
-                            <a href="/#music" data-name="music-link" className="text-white hover:text-[#FFD700] transition-colors duration-300 text-lg uppercase tracking-wide">MUSIC</a>
-                            <a href="/#personal-videos" data-name="music-videos-link" className="text-white hover:text-[#FFD700] transition-colors duration-300 text-lg uppercase tracking-wide">VIDEOS</a>
-                            <a href="/#photos" data-name="photos-link" className="text-white hover:text-[#FFD700] transition-colors duration-300 text-lg uppercase tracking-wide">PHOTOS</a>
-                            <a href="/press.html" data-name="press-link" className="text-white hover:text-[#FFD700] transition-colors duration-300 text-lg uppercase tracking-wide">PRESS</a>
-                            <a href="/merch.html" data-name="merch-link" className="text-white hover:text-[#FFD700] transition-colors duration-300 text-lg uppercase tracking-wide">MERCH</a>
-                            <a href="/#donation" data-name="donation-link" className="text-white hover:text-[#FFD700] transition-colors duration-300 text-lg uppercase tracking-wide">SUPPORT</a>
-                            <a href="/#more" data-name="more-link" className="text-white hover:text-[#FFD700] transition-colors duration-300 text-lg uppercase tracking-wide">CONNECT</a>
+                        <div className="flex items-center justify-center space-x-12 custom-navbar-font text-[3.1rem]">
+                            <a href="/" data-name="home-link" className="text-white hover:text-[#FFD700] transition-colors duration-300 text-[3.1rem] uppercase tracking-wide">HOME</a>
+                            <a href="/#music" data-name="music-link" className="text-white hover:text-[#FFD700] transition-colors duration-300 text-[3.1rem] uppercase tracking-wide">MUSIC</a>
+                            <a href="/#personal-videos" data-name="music-videos-link" className="text-white hover:text-[#FFD700] transition-colors duration-300 text-[3.1rem] uppercase tracking-wide">VIDEOS</a>
+                            <a href="/press.html" data-name="press-link" className="text-white hover:text-[#FFD700] transition-colors duration-300 text-[3.1rem] uppercase tracking-wide">PRESS</a>
+                            <a href="/merch.html" data-name="merch-link" className="text-white hover:text-[#FFD700] transition-colors duration-300 text-[3.1rem] uppercase tracking-wide">MERCH</a>
+                            <a href="/#donation" data-name="donation-link" className="text-white hover:text-[#FFD700] transition-colors duration-300 text-[3.1rem] uppercase tracking-wide">SUPPORT</a>
+                            <a href="/#more" data-name="more-link" className="text-white hover:text-[#FFD700] transition-colors duration-300 text-[3.1rem] uppercase tracking-wide">CONNECT</a>
                         </div>
                     </div>
 
@@ -34,15 +33,14 @@ function Navbar() {
 
             {isOpen && (
                 <div data-name="mobile-menu" className="md:hidden bg-[#1A1A1A] border-t border-[#333]">
-                    <div className="px-2 pt-2 pb-3 space-y-1">
-                        <a href="/" className="block px-3 py-2 text-white hover:text-[#FFD700] transition-colors duration-300 text-lg uppercase tracking-wide">HOME</a>
-                        <a href="/#music" className="block px-3 py-2 text-white hover:text-[#FFD700] transition-colors duration-300 text-lg uppercase tracking-wide">MUSIC</a>
-                        <a href="/#personal-videos" className="block px-3 py-2 text-white hover:text-[#FFD700] transition-colors duration-300 text-lg uppercase tracking-wide">VIDEOS</a>
-                        <a href="/#photos" className="block px-3 py-2 text-white hover:text-[#FFD700] transition-colors duration-300 text-lg uppercase tracking-wide">PHOTOS</a>
-                        <a href="/press.html" className="block px-3 py-2 text-white hover:text-[#FFD700] transition-colors duration-300 text-lg uppercase tracking-wide">PRESS</a>
-                        <a href="/merch.html" className="block px-3 py-2 text-white hover:text-[#FFD700] transition-colors duration-300 text-lg uppercase tracking-wide">MERCH</a>
-                        <a href="/#donation" className="block px-3 py-2 text-white hover:text-[#FFD700] transition-colors duration-300 text-lg uppercase tracking-wide">SUPPORT</a>
-                        <a href="/#more" className="block px-3 py-2 text-white hover:text-[#FFD700] transition-colors duration-300 text-lg uppercase tracking-wide">CONNECT</a>
+                    <div className="px-2 pt-2 pb-3 space-y-1 custom-navbar-font">
+                        <a href="/" className="block px-3 py-2 text-white hover:text-[#FFD700] transition-colors duration-300 text-[3.1rem] uppercase tracking-wide">HOME</a>
+                        <a href="/#music" className="block px-3 py-2 text-white hover:text-[#FFD700] transition-colors duration-300 text-[3.1rem] uppercase tracking-wide">MUSIC</a>
+                        <a href="/#personal-videos" className="block px-3 py-2 text-white hover:text-[#FFD700] transition-colors duration-300 text-[3.1rem] uppercase tracking-wide">VIDEOS</a>
+                        <a href="/press.html" className="block px-3 py-2 text-white hover:text-[#FFD700] transition-colors duration-300 text-[3.1rem] uppercase tracking-wide">PRESS</a>
+                        <a href="/merch.html" className="block px-3 py-2 text-white hover:text-[#FFD700] transition-colors duration-300 text-[3.1rem] uppercase tracking-wide">MERCH</a>
+                        <a href="/#donation" className="block px-3 py-2 text-white hover:text-[#FFD700] transition-colors duration-300 text-[3.1rem] uppercase tracking-wide">SUPPORT</a>
+                        <a href="/#more" className="block px-3 py-2 text-white hover:text-[#FFD700] transition-colors duration-300 text-[3.1rem] uppercase tracking-wide">CONNECT</a>
                     </div>
                 </div>
             )}

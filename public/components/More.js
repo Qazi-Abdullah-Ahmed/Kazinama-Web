@@ -9,7 +9,7 @@ function More() {
     return (
         <section id="more" data-name="more-section" className="section bg-[#121212] py-20">
             <div className="container mx-auto px-4">
-                <h2 className="text-3xl font-bold mb-12 text-center">
+                <h2 className="text-[4rem] mb-12 text-center">
                     <span className="text-[#FFD700]">Connect</span>
                 </h2>
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -29,7 +29,7 @@ function More() {
                                         <i className={`fab ${link.icon} text-4xl text-[#FFD700] transform group-hover:scale-110 transition-transform duration-300`}></i>
                                     </div>
                                 </div>
-                                <h3 className="text-xl font-semibold mb-2 text-white">{link.name}</h3>
+                                <h3 className="text-[1.8rem] mb-2 text-white">{link.name}</h3>
                                 <p className="text-gray-400">{link.description}</p>
                             </a>
                         </div>

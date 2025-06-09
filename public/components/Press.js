@@ -42,7 +42,7 @@ function Press() {
     return (
         <section id="press" data-name="press-section" className="min-h-screen bg-gradient-to-b from-[#0a0a0a] to-[#1a1a1a] py-20">
             <div className="container mx-auto px-4">
-                <h2 className="text-4xl font-bold mb-12 text-center">
+                <h2 className="text-[3rem] mb-12 text-center">
                     <span className="text-[#FFD700]">Press</span> Coverage
                 </h2>
 
@@ -89,7 +89,7 @@ function Press() {
                             </div>
                             <div className="p-6">
                                 <p className="text-[#FFD700] text-sm mb-2">{item.publication} • {item.date}</p>
-                                <h3 className="text-xl font-semibold mb-3 text-white">{item.title}</h3>
+                                <h4 className="text-[1rem] mb-3 text-white">{item.title}</h4>
                                 <p className="text-gray-400 mb-4">{item.excerpt}</p>
                                 <a 
                                     href={item.link}

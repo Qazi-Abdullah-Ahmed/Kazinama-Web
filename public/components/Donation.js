@@ -52,7 +52,7 @@ function Donation() {
     return (
         <section id="donation" data-name="donation-section" className="min-h-screen bg-[#121212] flex items-center py-20">
             <div className="container max-w-4xl mx-auto px-4">
-                <h2 className="text-4xl font-bold mb-8 text-center">
+                <h2 className="text-[4rem] mb-8 text-center">
                     <span className="text-[#FFD700]">SUPPORT</span>
                 </h2>
                 

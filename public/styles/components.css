@@ -4,6 +4,23 @@
     padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
 }
 
+@font-face {
+  font-family: 'Delirium';
+  src: url('/fonts/DeliriumNcv-Vm5E.ttf') format('truetype');
+  /* font-weight: normal; */
+  font-style: normal;
+}
+
+.custom-navbar-font {
+    font-family: 'Delirium', 'sans-serif';
+    letter-spacing: 3px;
+}
+
+.navbar-font {
+    font-family: 'Delirium', 'sans-serif';
+    letter-spacing: 3px;
+}
+
 .aspect-h-9 {
     position: relative;
 }

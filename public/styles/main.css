@@ -1,3 +1,15 @@
+@font-face {
+  font-family: 'Delirium';
+  src: url('/fonts/DeliriumNcv-Vm5E.ttf') format('truetype');
+  /* font-weight: normal; */
+  font-style: normal;
+}
+
+h1, h2, h3 {
+  font-family: 'Delirium', sans-serif;
+  letter-spacing: 3px;
+}
+
 body {
     font-family: 'Inter', sans-serif;
     color: #ffffff;

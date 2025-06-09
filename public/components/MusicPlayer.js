@@ -187,7 +187,7 @@ function MusicPlayer({ initialTrack }) {
                             <i className="fas fa-music text-[#FFD700]"></i>
                         </div>
                         <div>
-                            <h3 className="text-white font-medium">{playlist[currentTrackIndex].title}</h3>
+                            <h4 className="text-white font-medium">{playlist[currentTrackIndex].title}</h4>
                             <p className="text-gray-400 text-sm">{playlist[currentTrackIndex].artist}</p>
                         </div>
                     </div>

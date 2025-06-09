@@ -5,7 +5,7 @@ function Footer() {
                 <div className="grid md:grid-cols-3 gap-8 text-center md:text-left">
                     {/* Contact Info */}
                     <div data-name="footer-contact">
-                        <h3 className="text-xl font-semibold mb-3 text-[#FFD700]">Contact</h3>
+                        <h3 className="text-[2.5rem] mb-3 text-[#FFD700]">Contact</h3>
                         <ul className="space-y-1 text-sm">
                             <li>Email: <a href="mailto:contact@kazinama.com" className="hover:text-[#FFD700]">Contact@kazinama.com</a></li>
                             <li>Phone: <a href="tel:+15551234567" className="hover:text-[#FFD700]">(+91) 8595544847</a></li>
@@ -14,12 +14,12 @@ function Footer() {
 
                     {/* Kazinama Text Logo */}
                     <div className="flex items-center justify-center">
-                        <h1 className="text-2xl font-bold text-[#FFD700]">KAZINAMA</h1>
+                        <h1 className="text-[3.5rem] text-[#FFD700]">KAZINAMA</h1>
                     </div>
 
                     {/* Social + Patreon */}
                     <div data-name="footer-social" className="text-center md:text-right">
-                        <h3 className="text-xl font-semibold mb-3 text-[#FFD700]">Follow Me</h3>
+                        <h3 className="text-[2.5rem] mb-3 text-[#FFD700]">Follow Me</h3>
                         <div className="flex justify-center md:justify-end space-x-4 text-xl">
                             <a href="https://www.instagram.com/therealkazinama/" className="hover:text-[#FFD700]" aria-label="Instagram">
                                 <i className="fab fa-instagram"></i>
