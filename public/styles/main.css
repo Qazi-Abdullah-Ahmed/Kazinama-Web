@@ -1,7 +1,8 @@
 @font-face {
   font-family: 'Delirium';
   src: url('/fonts/DeliriumNcv.woff2') format('woff2'),
-       url('/fonts/DeliriumNcv.woff') format('woff');
+       url('/fonts/DeliriumNcv.woff') format('woff'),
+       url('/fonts/DeliriumNcv.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
