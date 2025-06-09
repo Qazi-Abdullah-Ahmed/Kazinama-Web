@@ -18,7 +18,7 @@ For updates, live shows, and new releases, stay tuned—and dive into his world 
             <div className="container mx-auto px-4">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     <div data-name="home-content" className="text-center md:text-left">
-                        <h1 className="text-[10rem] h-[200px]">
+                        <h1 className="text-[9rem] h-[180px]">
                             <span className="text-[#FFD700]">KAZINAMA</span>
                         </h1>
                         

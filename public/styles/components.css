@@ -1,14 +1,15 @@
+@font-face {
+  font-family: 'Delirium';
+  src: url('/fonts/DeliriumNcv.woff2') format('woff2'),
+       url('/fonts/DeliriumNcv.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* Video aspect ratio container */
 .aspect-w-16 {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-}
-
-@font-face {
-  font-family: 'Delirium';
-  src: url('/fonts/DeliriumNcv-Vm5E.ttf') format('truetype');
-  /* font-weight: normal; */
-  font-style: normal;
 }
 
 .custom-navbar-font {
