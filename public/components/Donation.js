@@ -7,10 +7,79 @@ function Donation() {
     const handlePayPalDonation = () => {
         window.open('https://paypal.me/kazinama', '_blank');
     };
-    
-const handleRazorpayDonation = () => {
-    window.open("https://razorpay.me/@kazinama", "_blank");
-};
+
+    const handleRazorpayDonation = async () => {
+    if (!amount) {
+        setError("Please enter a valid amount");
+        return;
+    }
+    setLoading(true);
+    setError('');
+
+    try {
+        // 1. Create order on backend
+        const orderRes = await fetch("/create-order", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ amount: parseInt(amount) * 100, currency: "INR" }),
+        });
+        const orderData = await orderRes.json();
+
+        if (!orderData.id) {
+            setError("Failed to create order");
+            setLoading(false);
+            return;
+        }
+
+        // 2. Open Razorpay checkout with order_id
+        const options = {
+            key: "rzp_live_Hxuc0ypwyR55G6",
+            amount: parseInt(amount) * 100,
+            currency: "INR",
+            name: "Kazinama",
+            description: "Support Donation",
+            image: "/photos/razorpay.png",
+            order_id: orderData.id, // Use order_id from backend
+            handler: function (response) {
+                // 3. Verify payment on backend
+                fetch("/verify-payment", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({
+                        razorpay_payment_id: response.razorpay_payment_id,
+                        razorpay_order_id: response.razorpay_order_id,
+                        razorpay_signature: response.razorpay_signature,
+                    }),
+                })
+                .then(res => res.json())
+                .then(data => {
+                    if (data.success) {
+                        alert("Payment verified!");
+                    } else {
+                        alert("Payment verification failed!");
+                    }
+                });
+            },
+            prefill: {
+                name: "",
+                email: "",
+                contact: ""
+            },
+            notes: {
+                message: message
+            },
+            theme: {
+                color: "#FFD700"
+            }
+        };
+
+        const rzp = new window.Razorpay(options);
+        rzp.open();
+    } catch (err) {
+        setError("Something went wrong. Please try again.");
+    }
+    setLoading(false);
+    };
 
 
     const handleAmountChange = (e) => {
