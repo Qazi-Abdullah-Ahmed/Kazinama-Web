@@ -7,39 +7,10 @@ function Donation() {
     const handlePayPalDonation = () => {
         window.open('https://paypal.me/kazinama', '_blank');
     };
-
-    const handleRazorpayDonation = () => {
-        if (!amount) {
-            setError("Please enter a valid amount");
-            return;
-        }
-
-        const options = {
-            key: "rzp_live_Hxuc0ypwyR55G6",
-            amount: parseInt(amount) * 100, 
-            currency: "INR",
-            name: "Kazinama",
-            description: "Support Donation",
-            image: "/photos/razorpay.png",
-            handler: function (response) {
-                alert("Payment successful!\nPayment ID: " + response.razorpay_payment_id);
-            },
-            prefill: {
-                name: "",
-                email: "", 
-                contact: "" 
-            },
-            notes: {
-                message: message
-            },
-            theme: {
-                color: "#FFD700"
-            }
-        };
-
-        const rzp = new window.Razorpay(options);
-        rzp.open();
-    };
+    
+const handleRazorpayDonation = () => {
+    window.open("https://razorpay.me/@kazinama", "_blank");
+};
 
 
     const handleAmountChange = (e) => {
